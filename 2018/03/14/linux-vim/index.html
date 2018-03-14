@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Linux vim," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="vim学习笔记（不要强行记忆，在使用中学习……）">
+<meta name="keywords" content="Linux vim">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vim学习笔记">
+<meta property="og:url" content="http://dreamfy.cn/2018/03/14/linux-vim/index.html">
+<meta property="og:site_name" content="梦飞扬">
+<meta property="og:description" content="vim学习笔记（不要强行记忆，在使用中学习……）">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://dreamfy.cn/img/20161123/gvim.jpg">
+<meta property="og:updated_time" content="2018-03-14T14:42:14.240Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="vim学习笔记">
+<meta name="twitter:description" content="vim学习笔记（不要强行记忆，在使用中学习……）">
+<meta name="twitter:image" content="http://dreamfy.cn/img/20161123/gvim.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://dreamfy.cn/2018/03/14/linux-vim/"/>
+
+
+
+
+
+  <title>vim学习笔记 | 梦飞扬</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">梦飞扬</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://dreamfy.cn/2018/03/14/linux-vim/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Vic.fu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="梦飞扬">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">vim学习笔记</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-14T22:42:14+08:00">
+                2018-03-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习记录/" itemprop="url" rel="index">
+                    <span itemprop="name">学习记录</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>vim学习笔记（不要强行记忆，在使用中学习……）</p>
+<a id="more"></a>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="为什么写这篇文章"><a href="#为什么写这篇文章" class="headerlink" title="为什么写这篇文章"></a>为什么写这篇文章</h3><p>近日频频在linux上查询各种日志，经常会用到vim命令，遇到一些不常用的vim命令时，第一想法就是去百度、谷歌，每次找一个命令都得花费不少时间，这里把所有常用的vim命令做一个整理，也分享给同样经历的同学，也方便自己以后查阅。</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>为了方便在window下进行学习，先下载一个gvim的编辑器。</p>
+<ul>
+<li>软件 <img src="/img/20161123/gvim.jpg" alt=""> <a href="http://www.vim.org/download.php" target="_blank" rel="noopener">点击下载</a></li>
+<li>注意：vim有两种模式，编辑模式和命令/正常(Normal)模式，编辑模式到命令/正常(Normal)模式通过<code>Esc</code>键进行切换。</li>
+</ul>
+<h3 id="光标移动"><a href="#光标移动" class="headerlink" title="光标移动"></a>光标移动</h3><ul>
+<li><code>k</code>：k 向上移动</li>
+<li><code>h</code>：h 向左边移动</li>
+<li><code>l</code>：l 向右边移动</li>
+<li><code>j</code>：j 向下移动<pre><code>     ^
+     k                           
+&lt; h     l &gt;                   
+     j                           
+     v
+</code></pre></li>
+<li><code>G</code> ：Shift+g 跳转到文本的最后一行</li>
+</ul>
+<h3 id="插入和退出"><a href="#插入和退出" class="headerlink" title="插入和退出"></a>插入和退出</h3><ul>
+<li><code>i</code>：在光标所在位置<strong>左边</strong>开始插入文本</li>
+<li><code>a</code>：在光标所在位置<strong>右边</strong>开始插入文本</li>
+<li><code>q</code>：退出vim编辑，不保存</li>
+<li><code>q!</code>：强行退出vim编辑，不保存</li>
+<li><code>wq</code>：保存所有修改</li>
+<li><code>wq!</code>：强制保存所有修改</li>
+</ul>
+<h3 id="删除类操作"><a href="#删除类操作" class="headerlink" title="删除类操作"></a>删除类操作</h3><ul>
+<li><code>x</code>：删除光标所在位置的字符</li>
+<li><code>dw</code>：删除从光标处至一个单字/单词的末尾，包括空格</li>
+<li><code>de</code>：删除从光标处至一个单字/单词的末尾，<strong>不</strong>包括空格</li>
+<li><code>d$</code>：删除从光标处至行末</li>
+<li><code>dd</code>：删除光标所在的整行</li>
+<li><code>2dd</code>：删除光标及光标下一行两行</li>
+</ul>
+<h3 id="撤销类操作"><a href="#撤销类操作" class="headerlink" title="撤销类操作"></a>撤销类操作</h3><ul>
+<li><code>u</code>：小写u，撤销上一次操作</li>
+<li><code>U</code>：大写U，撤销光标所在行所做的改动</li>
+</ul>
+<h3 id="置入类操作"><a href="#置入类操作" class="headerlink" title="置入类操作"></a>置入类操作</h3><ul>
+<li><code>p</code>：小写p，将最后一次删除的内容放置光标之<strong>后</strong></li>
+<li><code>P</code>：大写P，将最后一次删除的内容放置光标之<strong>前</strong></li>
+</ul>
+<h3 id="更改类操作"><a href="#更改类操作" class="headerlink" title="更改类操作"></a>更改类操作</h3><ul>
+<li><code>cw</code>：替换光标所在字符</li>
+</ul>
+<h3 id="搜索类操作"><a href="#搜索类操作" class="headerlink" title="搜索类操作"></a>搜索类操作</h3><ul>
+<li><code>/</code>：输入 / 以及尾随的字符串可以用以在当前文件中<strong>从前往后</strong>查找该字符串,要查找同上一次的字符串，只需要按 n 键。要向相反方向查找同上一次的字符串，请输入 Shift-N 即可。</li>
+<li><code>?</code>：和 / 类似，只是检索的方式是你逆向的，<strong>从后往前</strong>。</li>
+<li><code>%</code>：按 % 可以查找配对的括号 )、]、}</li>
+<li><code>:nohl</code>：取消搜索高亮显示</li>
+<li><code>:set nu</code>：显示行号</li>
+</ul>
+<h3 id="替换类操作"><a href="#替换类操作" class="headerlink" title="替换类操作"></a>替换类操作</h3><ul>
+<li><code>r</code>：输入r和一个字符，将替换光标所在位置的字符</li>
+<li><code>:s/old/new</code>：在光标所在行内替换<strong>头一个</strong>字符串 old 为新的字符串 new</li>
+<li><code>:s/old/new/g</code>：在光标所在行内替换<strong>所有</strong>的字符串 old 为新的字符串 new，请输入</li>
+<li><code>:#,#s/old/new/g</code>：在两行内替换所有的字符串 old 为新的字符串 new</li>
+<li><code>%s/old/new/g</code>：在文件内替换所有的字符串 old 为新的字符串 new</li>
+<li><code>%s/old/new/gc</code>：进行全文替换时询问用户确认每个替换需添加 c 选项</li>
+<li><code>10,20s/old/new</code>：把第 10 行到 20 行之间所有 old 替换为 new</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Linux-vim/" rel="tag"># Linux vim</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/14/java-exception-apply/" rel="next" title="Java异常处理及应用">
+                <i class="fa fa-chevron-left"></i> Java异常处理及应用
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/14/java-disabuse/" rel="prev" title="Java解惑">
+                Java解惑 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Vic.fu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">Artikel</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">Kategorien</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">Tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么写这篇文章"><span class="nav-number">1.1.</span> <span class="nav-text">为什么写这篇文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准备工作"><span class="nav-number">1.2.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#光标移动"><span class="nav-number">1.3.</span> <span class="nav-text">光标移动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入和退出"><span class="nav-number">1.4.</span> <span class="nav-text">插入和退出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除类操作"><span class="nav-number">1.5.</span> <span class="nav-text">删除类操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#撤销类操作"><span class="nav-number">1.6.</span> <span class="nav-text">撤销类操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#置入类操作"><span class="nav-number">1.7.</span> <span class="nav-text">置入类操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更改类操作"><span class="nav-number">1.8.</span> <span class="nav-text">更改类操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索类操作"><span class="nav-number">1.9.</span> <span class="nav-text">搜索类操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#替换类操作"><span class="nav-number">1.10.</span> <span class="nav-text">替换类操作</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Vic.fu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
