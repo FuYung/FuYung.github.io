@@ -43,7 +43,7 @@
     
     <title>
         
-            Upsource 一个新的代码审查工具 | 
+            Neo4j-Cypher语言语法 | 
         
         梦飞扬
     </title>
@@ -53,8 +53,8 @@
     <link rel="icon" href="/img/favicon.png">
 
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="description" itemprop="description" content="Upsource 一个新的代码审查工具(Polyglot code review tool)，Upsource安装、配置及使用介绍……">
-    <meta name="keywords" content=",Intellij IDEA">
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content=",Neo4j">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="梦飞扬">
-    <meta name="msapplication-starturl" content="http://dreamfy.cn/2018/03/14/upsource-guide/">
+    <meta name="msapplication-starturl" content="http://dreamfy.cn/2018/03/15/Neo4j-Cypher语言语法/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="梦飞扬">
@@ -230,16 +230,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://dreamfy.cn/2018/03/14/upsource-guide/">
+    <meta property="og:url" content="http://dreamfy.cn/2018/03/15/Neo4j-Cypher语言语法/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Upsource 一个新的代码审查工具 | 梦飞扬">
+    <meta property="og:title" content="Neo4j-Cypher语言语法 | 梦飞扬">
     <meta property="og:image" content="/img/favicon.png">
-    <meta property="og:description" content="Upsource 一个新的代码审查工具(Polyglot code review tool)，Upsource安装、配置及使用介绍……">
-    <meta property="og:article:tag" content="Intellij IDEA"> 
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="Neo4j"> 
 
     
-        <meta property="article:published_time" content="Wed Mar 14 2018 22:42:14 GMT+0800">
-        <meta property="article:modified_time" content="Wed Mar 14 2018 22:42:14 GMT+0800">
+        <meta property="article:published_time" content="Thu Mar 15 2018 23:14:10 GMT+0800">
+        <meta property="article:modified_time" content="Thu Mar 15 2018 23:17:37 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -247,7 +247,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://dreamfy.cn/2018/03/14/upsource-guide/index.html" />
+        <link rel="canonical" href="http://dreamfy.cn/2018/03/15/Neo4j-Cypher语言语法/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -259,10 +259,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://dreamfy.cn/2018/03/14/upsource-guide/index.html",
-    "headline": "Upsource 一个新的代码审查工具",
-    "datePublished": "Wed Mar 14 2018 22:42:14 GMT+0800",
-    "dateModified": "Wed Mar 14 2018 22:42:14 GMT+0800",
+    "mainEntityOfPage": "http://dreamfy.cn/2018/03/15/Neo4j-Cypher语言语法/index.html",
+    "headline": "Neo4j-Cypher语言语法",
+    "datePublished": "Thu Mar 15 2018 23:14:10 GMT+0800",
+    "dateModified": "Thu Mar 15 2018 23:17:37 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Vic.fu",
@@ -280,8 +280,8 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",Intellij IDEA",
-    "description": "Upsource 一个新的代码审查工具(Polyglot code review tool)，Upsource安装、配置及使用介绍……",
+    "keywords": ",Neo4j",
+    "description": "",
 }
 </script>
 
@@ -346,7 +346,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#写在前面的话"><span class="post-toc-number">1.</span> <span class="post-toc-text">写在前面的话</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装与配置"><span class="post-toc-number">2.</span> <span class="post-toc-text">安装与配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#下载解压"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">下载解压</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Win下启动安装配置"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Win下启动安装配置</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建-管理项目"><span class="post-toc-number">3.</span> <span class="post-toc-text">创建/管理项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#设置用户-组-角色权限"><span class="post-toc-number">4.</span> <span class="post-toc-text">设置用户/组/角色权限</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码审查（Code-Review）"><span class="post-toc-number">5.</span> <span class="post-toc-text">代码审查（Code Review）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Upsource能为代码审查提供哪些便利"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">Upsource能为代码审查提供哪些便利</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#如何进行代码审查"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">如何进行代码审查</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#代码对比"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">代码对比</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#关于代码评论"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">关于代码评论</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#参与评论"><span class="post-toc-number">5.5.</span> <span class="post-toc-text">参与评论</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Upsource分析功能"><span class="post-toc-number">6.</span> <span class="post-toc-text">Upsource分析功能</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#其他"><span class="post-toc-number">7.</span> <span class="post-toc-text">其他</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Cypher是什么"><span class="post-toc-number">1.</span> <span class="post-toc-text">Cypher是什么</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Cypher语法"><span class="post-toc-number">2.</span> <span class="post-toc-text">Cypher语法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Create</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Match"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">Match</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Merge"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">Merge</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Delete-和-Remove"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">Delete 和 Remove</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#order-by"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">order by</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Limit-和-Skip"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">Limit 和 Skip</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Union-和-Union-all"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">Union 和 Union all</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#In"><span class="post-toc-number">2.8.</span> <span class="post-toc-text">In</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Cypher-索引"><span class="post-toc-number">3.</span> <span class="post-toc-text">Cypher 索引</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#唯一约束-Constraint"><span class="post-toc-number">4.</span> <span class="post-toc-text">唯一约束 Constraint</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#执行计划-explain"><span class="post-toc-number">5.</span> <span class="post-toc-text">执行计划 explain</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#常用函数"><span class="post-toc-number">6.</span> <span class="post-toc-text">常用函数</span></a></li></ol>
     </ul>
     
 
@@ -378,7 +378,7 @@
         
     
             <p class="article-headline-p">
-                Upsource 一个新的代码审查工具
+                Neo4j-Cypher语言语法
             </p>
         </div>
 
@@ -397,7 +397,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Vic.fu</strong>
-        <span>3月 14, 2018</span>
+        <span>3月 15, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -421,7 +421,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/Intellij-IDEA/">Intellij IDEA</a>
+        <a class="post_tag-link" href="/tags/Neo4j/">Neo4j</a>
     </ul>
     
 
@@ -438,7 +438,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Upsource 一个新的代码审查工具&url=http://dreamfy.cn/2018/03/14/upsource-guide/index.html&pic=http://dreamfy.cn/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Neo4j-Cypher语言语法&url=http://dreamfy.cn/2018/03/15/Neo4j-Cypher语言语法/index.html&pic=http://dreamfy.cn/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -447,7 +447,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Upsource 一个新的代码审查工具&url=http://dreamfy.cn/2018/03/14/upsource-guide/index.html&via=Vic.fu" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Neo4j-Cypher语言语法&url=http://dreamfy.cn/2018/03/15/Neo4j-Cypher语言语法/index.html&via=Vic.fu" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -456,7 +456,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://dreamfy.cn/2018/03/14/upsource-guide/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://dreamfy.cn/2018/03/15/Neo4j-Cypher语言语法/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -465,7 +465,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://dreamfy.cn/2018/03/14/upsource-guide/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://dreamfy.cn/2018/03/15/Neo4j-Cypher语言语法/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -490,42 +490,59 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>Upsource 一个新的代码审查工具(Polyglot code review tool)，Upsource安装、配置及使用介绍……<br><a id="more"></a></p>
-<h2 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h2><p>最近因项目组需要，在寻找一款比较好用的代码审查工具，作为Intellj IDEA重度粉丝，所以优先找的还是能支持Intellij IDEA的工具，正好在JetBrains官网上看到这款Upsource工具，于是打算花了一周时间研究下，于是各种baidu，Google找资料，发现这款工具的中文介绍少之又少，所有就有了这篇文章，此文仅供需要的同仁，如有问题欢迎指正。</p>
+        <p>本文是记录Neo4j图数据库中实用的Cypher语言语法。</p>
+<h2 id="Cypher是什么"><a href="#Cypher是什么" class="headerlink" title="Cypher是什么"></a>Cypher是什么</h2><p>“Cypher”是一个描述性的类Sql的图操作语言。相当于关系数据库的Sql，可见其重要性。其语法针对图的特点而设计，非常方便和灵活。</p>
 <ul>
-<li>另外在网上也找到<a href="http://www.codeceo.com/article/17-best-code-review-tools.html" target="_blank" rel="noopener">17款最佳的代码审查工具</a>，供大家参考。</li>
+<li>Cypher是一个申明式查询语言，适合于开发者和在数据库上做点对点模式（ad-hoc）查询。</li>
+<li>Cypher通过一系列不同的方法和建立于确定的实践为表达查询而激发的。许多关键字如</li>
+<li>like和order by是受SQL的启发。正则表达式匹配实现模仿Scala  语言。<br>学好Cypher是学好Neo4j的关键，也是核心所在！</li>
 </ul>
-<h2 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h2><h3 id="下载解压"><a href="#下载解压" class="headerlink" title="下载解压"></a>下载解压</h3><p>下载合适版本的Upsource安装程序<a href="https://www.jetbrains.com/upsource/download/" target="_blank" rel="noopener">点击下载</a>，我用的版本为<strong>Upsource-3.5.3550</strong>，将其解压到任意磁盘，进入Upsource根目录(下面统称<code>upsource_home</code>)，准备进行安装，</p>
-<h3 id="Win下启动安装配置"><a href="#Win下启动安装配置" class="headerlink" title="Win下启动安装配置"></a>Win下启动安装配置</h3><ul>
-<li>Upsource对比较耗内存，建议机器内存在4G以上</li>
-<li>在Windows环境，为了避免碰到各种奇奇怪怪的问题，最好关闭所有杀毒软件    </li>
-</ul>
-<p>Upsource两种启动方式：作为后台进程进行启动、作为Windows Service安装</p>
-<p>1.运行Upsource作为后台进程进行安装   </p>
-<p><strong>以管理员身份运行</strong>打开cmd，切换到&lt;upsource_home&gt;目录，执行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">upsource_home\bin\upsource.bat start</span><br></pre></td></tr></table></figure></p>
-<p><img src="/img/20161123/upsource/1-1.png" alt=""><br>2.运行Upsource安装为Windows Service<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">upsource_home\bin\upsource.bat service install /runAsSystem</span><br></pre></td></tr></table></figure></p>
-<p>启动完成后会打开默认浏览器网址<strong>http://机器名:80/welcome</strong> 页面，注意在3.5版本中windows默认端口为80，在以前的版本端口默认是8080。这是你会看到如下页面：<br><img src="/img/20161123/upsource/1-2.png" alt=""><br>点击<code>Set up</code>进行安装，这时我们可以修改访问域名和端口<br><img src="/img/20161123/upsource/1-3.png" alt=""><br>点击<code>Next</code>进入用户管理，设置管理员用户名密码<br><img src="/img/20161123/upsource/1-4.png" alt=""><br>点击<code>Next</code>，这里会提示免费版支持10个免费用户，如果你有License Key的话，在这里可以输入。<br><img src="/img/20161123/upsource/1-5.png" alt=""><br>点击<code>Finish</code>，静候安装<br><img src="/img/20161123/upsource/1-6.png" alt=""><br><img src="/img/20161123/upsource/1-7.png" alt=""><br>启动完成后，会默认打开欢迎页面，到这步安装大功告成。<br><img src="/img/20161123/upsource/1-8.png" alt=""></p>
-<h2 id="创建-管理项目"><a href="#创建-管理项目" class="headerlink" title="创建/管理项目"></a>创建/管理项目</h2><p>使用admin账户登录，点击<code>Create Project</code>创建项目<br><img src="/img/20161123/upsource/3-1.png" alt=""><br><img src="/img/20161123/upsource/3-2.png" alt=""><br>点击<code>Create project</code>完成项目创建，接下来就等待代码clone完成。</p>
-<h2 id="设置用户-组-角色权限"><a href="#设置用户-组-角色权限" class="headerlink" title="设置用户/组/角色权限"></a>设置用户/组/角色权限</h2><p>代码下载完成之后，就开始设置用户权限<br><img src="/img/20161123/upsource/2-1.png" alt=""><br>点击<code>Users</code>进行用户/组/角色权限设置，Upsource安装完成之后默认添加了admin和guest用户。<br><img src="/img/20161123/upsource/2-2.png" alt=""><br>设置用户时可以指定用户组，每个项目有三个用户组，分别为<code>Code Viewers</code>、<code>Developers</code>、<code>Project Admin</code>。同一个用户可以拥有多个用户组。<br><img src="/img/20161123/upsource/2-3.png" alt=""><br>角色权限可以设置全局角色和对应某个项目的角色，总共有五种，分别是：<code>Code Viewer</code>、<code>Developer</code>、<code>Observer</code>、<code>Project Admin</code>、<code>System Admin</code>，每个角色所拥有的权限都可以根据自己需求灵活进行配置<br><img src="/img/20161123/upsource/2-4.png" alt=""><br>这里我们为<code>cms</code>项目添加两个用户：<code>Lucy</code>为<code>Project Admin</code>角色，<code>tom</code>为<code>Developer</code>角色</p>
-<h2 id="代码审查（Code-Review）"><a href="#代码审查（Code-Review）" class="headerlink" title="代码审查（Code Review）"></a>代码审查（Code Review）</h2><h3 id="Upsource能为代码审查提供哪些便利"><a href="#Upsource能为代码审查提供哪些便利" class="headerlink" title="Upsource能为代码审查提供哪些便利"></a>Upsource能为代码审查提供哪些便利</h3><ul>
-<li>对多种类型的代码库与软件开发语言进行代码浏览</li>
-<li>对同一个代码库的多个修订版本进行浏览，并且通过一个图形化工具显示多个修订版本之间的关系</li>
-<li>对代码变更进行跟踪，包括提交历史、变更差异比较，以及分支与合并的操作</li>
-<li>对团队的代码进行审查，包括代码的讨论、跟踪代码评论以及最终的结论</li>
-</ul>
-<h3 id="如何进行代码审查"><a href="#如何进行代码审查" class="headerlink" title="如何进行代码审查"></a>如何进行代码审查</h3><p>当开发者<code>tom</code>提交完代码之后，项目管理员<code>Lucy</code>登录到Upsource，可以看到所有项目的索引，每个项目都有对应一个特定的VCS仓库。<br><img src="/img/20161123/upsource/4-1.png" alt=""><br>单击项目名称列出每一次提交的版本，每一次提交的代码罗列，这里你可以浏览代码，创建代码审核，分支列表，分支与分支代码比较，代码提交代码审核分析（可视化图表）……等等你想要的功能。<br><img src="/img/20161123/upsource/4-2.png" alt=""><br>拖动滚动条，将光标移动到需要进行审核的修订版本上，点击<code>Create review</code>创建一次新的代码审查<br><img src="/img/20161123/upsource/4-3.png" alt=""><br><img src="/img/20161123/upsource/4-4.png" alt=""></p>
-<h3 id="代码对比"><a href="#代码对比" class="headerlink" title="代码对比"></a>代码对比</h3><p>点击左边修订版中提交的文件名显示嵌入差异：<br><img src="/img/20161123/upsource/4-5.png" alt=""><br>点击<code>Side-by-side diff</code>可以查看整个文件在提交前后的变化<br><img src="/img/20161123/upsource/4-6.png" alt=""></p>
-<h3 id="关于代码评论"><a href="#关于代码评论" class="headerlink" title="关于代码评论"></a>关于代码评论</h3><p>无论你是作为一个<code>author</code>、<code>reviewer</code>或<code>watcher</code>，你都可以发表评论，发表的评论所有参与的人都可以看得见<br>有三种类型的评论：  </p>
+<h2 id="Cypher语法"><a href="#Cypher语法" class="headerlink" title="Cypher语法"></a>Cypher语法</h2><h3 id="Create"><a href="#Create" class="headerlink" title="Create"></a>Create</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">CREATE (erzi:Person &#123;id:‘erzi’&#125;), //erzi是别名</span><br><span class="line">(baba:Person &#123;id:&apos;baba&apos;&#125;),</span><br><span class="line">(yeye:Person &#123;id:&apos;yeye&apos;,name:&apos;zhangsan&apos;&#125;),</span><br><span class="line">(nainai:Person &#123;id:&apos;nainai&apos;&#125;),</span><br><span class="line">(mama:Person &#123;id:&apos;mama&apos;&#125;),</span><br><span class="line">(bozi:Person &#123;id:&apos;bozi&apos;&#125;),</span><br><span class="line">// 创建关系</span><br><span class="line">(erzi)-[:fathor]-&gt;(baba),</span><br><span class="line">(baba)-[:fathor]-&gt;(yeye),</span><br><span class="line">(baba)-[:mother]-&gt;(nainai),</span><br><span class="line">(erzi)-[:mother]-&gt;(mama),</span><br><span class="line">(erzi)-[:girlFrend]-&gt;(bozi)</span><br></pre></td></tr></table></figure>
+<h3 id="Match"><a href="#Match" class="headerlink" title="Match"></a>Match</h3><p><code>match</code>相当于sql中的select<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MATCH (n:Person) RETURN n limit 25</span><br></pre></td></tr></table></figure></p>
+<p>等价于：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Select * from Person limit 25</span><br></pre></td></tr></table></figure></p>
+<h3 id="Merge"><a href="#Merge" class="headerlink" title="Merge"></a>Merge</h3><p><code>merge</code> 相当于Match or Create 有则match，无则Create<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MERGE (n:Person &#123; name: &apos;Ann&apos; &#125;) RETURN n</span><br></pre></td></tr></table></figure></p>
+<p>下面这两条语句的对比？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">match (n:Person &#123;id:&apos;mama&apos;&#125;),(m:Person &#123;id:&apos;nainai&apos;&#125;) merge (n)-[:poxi]-&gt;(m) return n,m</span><br><span class="line">和</span><br><span class="line">match (n:Person &#123;id:&apos;mama&apos;&#125;) with n match (m:Person &#123;id:&apos;nainai&apos;&#125;) merge (n)-[:poxi]-&gt;(m) return n,m</span><br></pre></td></tr></table></figure></p>
+<h3 id="Delete-和-Remove"><a href="#Delete-和-Remove" class="headerlink" title="Delete 和 Remove"></a>Delete 和 Remove</h3><p>DELETE和REMOVE主要区别 :<br>DELETE操作用于删除节点和relation。<br>REMOVE操作用于删除标签label和属性。<br>Remove label 等同于drop table<br>两个命令都应该与MATCH命令一起使用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Match (n:Person &#123;id:&apos;baba&apos;&#125;) remove n.age return n</span><br><span class="line">MATCH (s:Teacher)-[r:teach]-&gt;(d:Student) delete r,s,d //删除与该关系相关的老师和学生及label</span><br><span class="line">MATCH (n:Test) remove n:Test //删除label</span><br></pre></td></tr></table></figure>
+<p>如何仅仅删除一个relation？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Match (a:Person),(b:Person) where a.id=&apos;erzi&apos; and b.id=&apos;bozi&apos; merge (a)-[r:FUQI]-&gt;(b) DELETE r</span><br></pre></td></tr></table></figure></p>
+<h3 id="order-by"><a href="#order-by" class="headerlink" title="order by"></a>order by</h3><p><code>order by</code> 同sql</p>
+<h3 id="Limit-和-Skip"><a href="#Limit-和-Skip" class="headerlink" title="Limit 和 Skip"></a>Limit 和 Skip</h3><p><code>limit</code>：显示多少行<br><code>skip</code>：从最前面开始，跳过多少行</p>
+<h3 id="Union-和-Union-all"><a href="#Union-和-Union-all" class="headerlink" title="Union 和 Union all"></a>Union 和 Union all</h3><p><code>Union</code>：把多段Match的return结果 上线组合成一个结果集，会自动去掉重复行；<br><code>Union all</code>：作用同union，但不去重；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">MATCH (n:Person) where n.age&gt;20 RETURN n.id,n.age</span><br><span class="line">union all</span><br><span class="line">MATCH (n:Person) where n.id=&apos;erzi&apos; RETURN n.id,n.age</span><br></pre></td></tr></table></figure>
+<h3 id="In"><a href="#In" class="headerlink" title="In"></a>In</h3><p>和sql的区别就是使用[]中括号，而不是()括弧号<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MATCH (n:Person) where n.age&gt;20 RETURN n.id,n.age union all MATCH (n:Person) where n.id in [&apos;erzi&apos;,&apos;bozi&apos;,&apos;baba&apos;] RETURN n.id,n.age</span><br></pre></td></tr></table></figure></p>
+<h2 id="Cypher-索引"><a href="#Cypher-索引" class="headerlink" title="Cypher 索引"></a>Cypher 索引</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">create index on:Person(id)</span><br><span class="line">drop index on:Person(id)</span><br></pre></td></tr></table></figure>
+<p>注意：</p>
 <ul>
-<li>审查意见：这种类型的评论是不是捆绑到任何代码特定文件或部分。</li>
-<li>行级评论：这种类型的注释与特定的代码行相关联。</li>
-<li>代码块评论：这种类型的评论是为了找出一个特定的代码片段中的一个文件进行审查。</li>
+<li>创建索引时不需要给索引起名称，只需要设置索引的字段即可</li>
+<li>通过该字段的查询都走索引 where in = </li>
 </ul>
-<p>行级评论<br><img src="/img/20161123/upsource/4-7.png" alt=""></p>
-<p>代码块评论<br><img src="/img/20161123/upsource/4-8.png" alt=""></p>
-<h3 id="参与评论"><a href="#参与评论" class="headerlink" title="参与评论"></a>参与评论</h3><p><code>Lucy</code>进行评论后，开发者<code>tom</code>会收到邮件通知，登录<code>tom</code>账户，可以清晰的看到<code>Lucy</code>的评论的代码，可以进行回复。<br><img src="/img/20161123/upsource/4-9.png" alt=""><br>当点击<code>Accept</code>时，表示接受此次修订，此次审查被视为完成。<br><img src="/img/20161123/upsource/4-10.png" alt=""></p>
-<h2 id="Upsource分析功能"><a href="#Upsource分析功能" class="headerlink" title="Upsource分析功能"></a>Upsource分析功能</h2><p>Upsource提供了例如代码提交分析、代码审查分析等功能。<br><img src="/img/20161123/upsource/5-1.png" alt=""></p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>JetBrains提供的Upsource授权计划是根据用户的数量所决定的，不超过10人（去掉admin、guest其实就只有8个用户）的团队可以免费使用。同样，教育机构及非盈利的开源项目也可以免费使用。</p>
+<h2 id="唯一约束-Constraint"><a href="#唯一约束-Constraint" class="headerlink" title="唯一约束 Constraint"></a>唯一约束 Constraint</h2><p>给某个属性设置唯一约束<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">create constraint on (n:Person) assert n.id is unique</span><br><span class="line">drop constraint on (n:Person) assert n.id is unique</span><br></pre></td></tr></table></figure></p>
+<h2 id="执行计划-explain"><a href="#执行计划-explain" class="headerlink" title="执行计划 explain"></a>执行计划 explain</h2><p>类似sql</p>
+<p><img src="$res/1512897788760.jpg" alt="1512897788760"></p>
+<h2 id="常用函数"><a href="#常用函数" class="headerlink" title="常用函数"></a>常用函数</h2><blockquote>
+<p> Neo4j无 group by</p>
+<ul>
+<li><code>UPPER</code> 它用于将所有字母更改为大写字母。</li>
+<li><code>LOWER</code> 它用于将所有字母改为小写字母。</li>
+<li><code>SUBSTRING</code> 它用于获取给定String的子字符串。 </li>
+<li><code>REPLACE</code> 它用于替换一个字符串的子字符串。<br>Match (n:Person) return SUBSTRING(n.id,2,0),n.id</li>
+</ul>
+</blockquote>
+<p><strong>聚集函数</strong> </p>
+<ul>
+<li><code>COUNT</code> 它返回由MATCH命令返回的行数。</li>
+<li><code>MAX</code> 它从MATCH命令返回的一组行返回最大值。</li>
+<li><code>MIN</code> 它返回由MATCH命令返回的一组行的最小值。</li>
+<li><code>SUM</code> 它返回由MATCH命令返回的所有行的求和值。</li>
+<li><code>AVG</code> 它返回由MATCH命令返回的所有行的平均值。<br>Match (n:Person) return count(*)<br>Match (n:Person) return avg(n.age) 只包含age不为空的node</li>
+</ul>
+<p><strong>查询最短路径</strong></p>
+<blockquote>
+<p>查询最短路径的必要性：6层关系理论：任何两个事物之间的关系都不会超过6层。<br>关系链路越短，代表这两个节点的关系越密切！</p>
+</blockquote>
+<p><code>allShortestPaths</code> [*..n] 用于表示获取n层关系,显示所有的链路关系（Single shortest path）<br><code>shortestPath</code> 显示最短的链路（Single shortest path）</p>
+<p><code>match p=allshortestPaths((n:Person {id:&#39;mama&#39;})-[*..3]-(b:Person {id:&#39;nainai&#39;})) return p
+match p=shortestPath((n:Person {id:&#39;mama&#39;})-[*..3]-(b:Person {id:&#39;nainai&#39;})) return p</code>-</p>
 
         
     
@@ -546,21 +563,13 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/03/14/mysql中my-small.ini、my-medium.ini、my-large.ini、my-huge.ini的作用/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2018/03/14/linux-vim/" id="post_nav-older" class="next-content">
+        <a href="/2018/03/15/hexo-readme/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
