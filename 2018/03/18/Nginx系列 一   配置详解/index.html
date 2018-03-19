@@ -239,7 +239,7 @@
 
     
         <meta property="article:published_time" content="Sun Mar 18 2018 10:08:33 GMT+0800">
-        <meta property="article:modified_time" content="Sun Mar 18 2018 23:14:29 GMT+0800">
+        <meta property="article:modified_time" content="Mon Mar 19 2018 23:08:14 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -262,7 +262,7 @@
     "mainEntityOfPage": "http://dreamfy.cn/2018/03/18/Nginx系列 一   配置详解/index.html",
     "headline": "Nginx系列<一>  配置详解",
     "datePublished": "Sun Mar 18 2018 10:08:33 GMT+0800",
-    "dateModified": "Sun Mar 18 2018 23:14:29 GMT+0800",
+    "dateModified": "Mon Mar 19 2018 23:08:14 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Vic.fu",
@@ -491,7 +491,7 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <p>Nginx安装部署和常用基本命令介绍。介绍平滑重启、平滑升级等操作。<br><a id="more"></a></p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="Nginx安装部署"><a href="#Nginx安装部署" class="headerlink" title="Nginx安装部署"></a>Nginx安装部署</h2><h3 id="下载Nginx源代码"><a href="#下载Nginx源代码" class="headerlink" title="下载Nginx源代码"></a>下载Nginx源代码</h3><p>根据系统从官网下载对应版本Nginx<a href="https://nginx.org/en/download.html" target="_blank" rel="noopener">点我下载</a>，选择下载即可。Window版本的Nginx服务器在效率上比Linux差一些，并且通常Nginx在实际生产环境中都是在Linux/Unix系统，本文使用Linux系统，使用Nginx版本问1.10.1。下载Nginx后解压。主要的目录描述如下：</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="Nginx安装部署"><a href="#Nginx安装部署" class="headerlink" title="Nginx安装部署"></a>Nginx安装部署</h2><h3 id="下载Nginx源代码"><a href="#下载Nginx源代码" class="headerlink" title="下载Nginx源代码"></a>下载Nginx源代码</h3><p>根据系统类型从官网下载对应版本的Nginx<a href="https://nginx.org/en/download.html" target="_blank" rel="noopener">点我下载</a>。Window版本的Nginx服务器在效率上比Linux差一些，并且通常Nginx在实际生产环境中都是基于Linux/Unix系统，所以本文使用Linux系统，Nginx版本为1.10.1。下载Nginx后解压，主要的目录描述如下：</p>
 <ul>
 <li><strong>conf</strong> 目录中存放的nginx的配置文件，主要的nginx.cnf文件就在此目录</li>
 <li><strong>man</strong> 目录存放的nginx服务器的文档资料，包含nginx服务器的LICENSE、OpenSSL的LICENSE等，以及Nginx等帮助文档和readme。</li>
@@ -504,12 +504,19 @@
 </ul>
 <h3 id="Linux下编译和安装Nginx"><a href="#Linux下编译和安装Nginx" class="headerlink" title="Linux下编译和安装Nginx"></a>Linux下编译和安装Nginx</h3><p>一般Nginx有两种安装方式，yum安装和源码包安装<br>这里先说明下 <code>yum</code> 和 <code>源码包</code> 安装的 区别：</p>
 <ol>
-<li><code>yum</code> 安装是在线安装，好处是：安装方式简单，不易出错；</li>
+<li><code>yum</code> 安装是在线安装，好处是：安装方式简单，不易出错；直接使用命令 <code>yum -y install nginx</code> 安装即可</li>
 <li><code>源码包</code> 安装是先将 <code>nginx</code> 的源码下载下来，自己编译生成可执行文件，然后执行，好处是：因为是在自己的系统上编译的，更符合自己系统的性能，也就是说在自己的系统上执行 <code>nginx</code> 服务性能效率更好。</li>
 </ol>
-<p>所以下文主要介绍用源码包安装方式Nginx源代码的编译需要使用configure自动脚本生产Makefile文件。在生成makefile文件之前，需要先了解configure脚本支持的几个常用选项。</p>
+<p>所以下文主要介绍用源码包安装方式Nginx，源代码的编译需要使用configure自动脚本生产Makefile文件。在生成makefile文件之前，需要先了解configure脚本支持的几个常用选项。（图片来源：Nginx高性能web服务器详解）</p>
 <p><img src="/img/20180318/1521385446741.jpg" alt="图片来源“Nginx高性能web服务器详解”"><br><img src="/img/20180318/1521385451730.jpg" alt="图片来源“Nginx高性能web服务器详解”"><br><img src="/img/20180318/1521385778478.jpg" alt="图片来源“Nginx高性能web服务器详解”"><br><img src="/img/20180318/1521385877714.jpg" alt="图片来源“Nginx高性能web服务器详解”"><br><img src="/img/20180318/1521385883463.jpg" alt="图片来源“Nginx高性能web服务器详解”"></p>
-<h2 id="Nginx常用命令"><a href="#Nginx常用命令" class="headerlink" title="Nginx常用命令"></a>Nginx常用命令</h2><h3 id="全局块（http）"><a href="#全局块（http）" class="headerlink" title="全局块（http）"></a>全局块（http）</h3><h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><h3 id="localhost"><a href="#localhost" class="headerlink" title="localhost"></a>localhost</h3>
+<p>了解了configure的常用选项后，就可以按照你的具体需求生成Makefile文件了。一般使用最多的就是--prefix啦，用于指定Nginx的安装目录，默认为/usr/local/nginx，其他参数一般都默认。<br>这里将使用以下命令将Nginx编译在/data/nginx目录。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./configure --prefix=/data/nginx</span><br></pre></td></tr></table></figure>
+<p>这时会输出一堆日志，基本上没报错就ok，这里会根据您系统的性能编译nginx，生成Makefile文件。<br>使用make &amp;&amp; make install 编译安装Nginx。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure></p>
+<p>输入/data/nginx/sbin/nginx -v 查看nginx版本号即安装成功。</p>
+<h2 id="Nginx常用命令"><a href="#Nginx常用命令" class="headerlink" title="Nginx常用命令"></a>Nginx常用命令</h2><h3 id="全局块（http）"><a href="#全局块（http）" class="headerlink" title="全局块（http）"></a>全局块（http）</h3><h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><h3 id="localhost"><a href="#localhost" class="headerlink" title="localhost"></a>localhost</h3><blockquote>
+<p>参考文档：Nginx高性能web服务器详解</p>
+</blockquote>
+
         
     
 
