@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://dreamfy.cn/"/>
+  <link href="http://fuyong.net.cn/"/>
   <updated>2018-08-16T05:03:15.351Z</updated>
-  <id>http://dreamfy.cn/</id>
+  <id>http://fuyong.net.cn/</id>
   
   <author>
     <name>Vicfu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Intellij IDEA快捷键介绍-常用篇</title>
-    <link href="http://dreamfy.cn/2018/03/28/Intellij%20IDEA%E5%BF%AB%E6%8D%B7%E9%94%AE%E4%BB%8B%E7%BB%8D-%E5%B8%B8%E7%94%A8%E7%AF%87/"/>
-    <id>http://dreamfy.cn/2018/03/28/Intellij IDEA快捷键介绍-常用篇/</id>
+    <link href="http://fuyong.net.cn/2018/03/28/Intellij%20IDEA%E5%BF%AB%E6%8D%B7%E9%94%AE%E4%BB%8B%E7%BB%8D-%E5%B8%B8%E7%94%A8%E7%AF%87/"/>
+    <id>http://fuyong.net.cn/2018/03/28/Intellij IDEA快捷键介绍-常用篇/</id>
     <published>2018-03-28T14:59:59.614Z</published>
     <updated>2018-08-16T05:03:15.351Z</updated>
     
@@ -31,17 +31,17 @@
     
     </summary>
     
-      <category term="工具" scheme="http://dreamfy.cn/categories/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="http://fuyong.net.cn/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="Intellij IDEA" scheme="http://dreamfy.cn/tags/Intellij-IDEA/"/>
+      <category term="Intellij IDEA" scheme="http://fuyong.net.cn/tags/Intellij-IDEA/"/>
     
   </entry>
   
   <entry>
     <title>Nginx系列&lt;一&gt;  配置介绍</title>
-    <link href="http://dreamfy.cn/2018/03/18/Nginx%E7%B3%BB%E5%88%97%20%E4%B8%80%20%20%20%E9%85%8D%E7%BD%AE%E4%BB%8B%E7%BB%8D/"/>
-    <id>http://dreamfy.cn/2018/03/18/Nginx系列 一   配置介绍/</id>
+    <link href="http://fuyong.net.cn/2018/03/18/Nginx%E7%B3%BB%E5%88%97%20%E4%B8%80%20%20%20%E9%85%8D%E7%BD%AE%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://fuyong.net.cn/2018/03/18/Nginx系列 一   配置介绍/</id>
     <published>2018-03-18T02:08:33.286Z</published>
     <updated>2018-08-16T05:08:51.206Z</updated>
     
@@ -53,17 +53,17 @@
     
     </summary>
     
-      <category term="工作记录" scheme="http://dreamfy.cn/categories/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+      <category term="工作记录" scheme="http://fuyong.net.cn/categories/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
     
     
-      <category term="Nginx" scheme="http://dreamfy.cn/tags/Nginx/"/>
+      <category term="Nginx" scheme="http://fuyong.net.cn/tags/Nginx/"/>
     
   </entry>
   
   <entry>
     <title>Neo4j-Cypher语言语法</title>
-    <link href="http://dreamfy.cn/2018/03/15/Neo4j-Cypher%E8%AF%AD%E8%A8%80%E8%AF%AD%E6%B3%95/"/>
-    <id>http://dreamfy.cn/2018/03/15/Neo4j-Cypher语言语法/</id>
+    <link href="http://fuyong.net.cn/2018/03/15/Neo4j-Cypher%E8%AF%AD%E8%A8%80%E8%AF%AD%E6%B3%95/"/>
+    <id>http://fuyong.net.cn/2018/03/15/Neo4j-Cypher语言语法/</id>
     <published>2018-03-15T15:14:10.855Z</published>
     <updated>2018-03-15T15:17:37.421Z</updated>
     
@@ -79,17 +79,17 @@
     
     </summary>
     
-      <category term="工作记录" scheme="http://dreamfy.cn/categories/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+      <category term="工作记录" scheme="http://fuyong.net.cn/categories/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
     
     
-      <category term="Neo4j" scheme="http://dreamfy.cn/tags/Neo4j/"/>
+      <category term="Neo4j" scheme="http://fuyong.net.cn/tags/Neo4j/"/>
     
   </entry>
   
   <entry>
     <title>Hello Hexo!</title>
-    <link href="http://dreamfy.cn/2018/03/15/hexo-readme/"/>
-    <id>http://dreamfy.cn/2018/03/15/hexo-readme/</id>
+    <link href="http://fuyong.net.cn/2018/03/15/hexo-readme/"/>
+    <id>http://fuyong.net.cn/2018/03/15/hexo-readme/</id>
     <published>2018-03-15T15:13:07.776Z</published>
     <updated>2018-03-15T15:13:07.776Z</updated>
     
@@ -109,8 +109,8 @@
   
   <entry>
     <title>银行等额本息还款算法</title>
-    <link href="http://dreamfy.cn/2018/03/14/%E9%93%B6%E8%A1%8C%E7%AD%89%E9%A2%9D%E6%9C%AC%E6%81%AF%E8%BF%98%E6%AC%BE%E7%AE%97%E6%B3%95/"/>
-    <id>http://dreamfy.cn/2018/03/14/银行等额本息还款算法/</id>
+    <link href="http://fuyong.net.cn/2018/03/14/%E9%93%B6%E8%A1%8C%E7%AD%89%E9%A2%9D%E6%9C%AC%E6%81%AF%E8%BF%98%E6%AC%BE%E7%AE%97%E6%B3%95/"/>
+    <id>http://fuyong.net.cn/2018/03/14/银行等额本息还款算法/</id>
     <published>2018-03-14T14:42:14.243Z</published>
     <updated>2018-03-18T02:22:37.382Z</updated>
     
@@ -122,17 +122,17 @@
     
     </summary>
     
-      <category term="工作记录" scheme="http://dreamfy.cn/categories/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+      <category term="工作记录" scheme="http://fuyong.net.cn/categories/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
     
     
-      <category term="金融" scheme="http://dreamfy.cn/tags/%E9%87%91%E8%9E%8D/"/>
+      <category term="金融" scheme="http://fuyong.net.cn/tags/%E9%87%91%E8%9E%8D/"/>
     
   </entry>
   
   <entry>
     <title>如何使用Intellij IDEA 推送项目到远程Git仓库</title>
-    <link href="http://dreamfy.cn/2018/03/14/%E4%BD%BF%E7%94%A8Intellij%20IDEA%E6%8E%A8%E9%80%81%E9%A1%B9%E7%9B%AE%E5%88%B0%E8%BF%9C%E7%A8%8BGit%E4%BB%93%E5%BA%93/"/>
-    <id>http://dreamfy.cn/2018/03/14/使用Intellij IDEA推送项目到远程Git仓库/</id>
+    <link href="http://fuyong.net.cn/2018/03/14/%E4%BD%BF%E7%94%A8Intellij%20IDEA%E6%8E%A8%E9%80%81%E9%A1%B9%E7%9B%AE%E5%88%B0%E8%BF%9C%E7%A8%8BGit%E4%BB%93%E5%BA%93/"/>
+    <id>http://fuyong.net.cn/2018/03/14/使用Intellij IDEA推送项目到远程Git仓库/</id>
     <published>2018-03-14T14:42:14.242Z</published>
     <updated>2018-03-18T02:22:16.833Z</updated>
     
@@ -144,17 +144,17 @@
     
     </summary>
     
-      <category term="工具" scheme="http://dreamfy.cn/categories/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="http://fuyong.net.cn/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="Intellij IDEA" scheme="http://dreamfy.cn/tags/Intellij-IDEA/"/>
+      <category term="Intellij IDEA" scheme="http://fuyong.net.cn/tags/Intellij-IDEA/"/>
     
   </entry>
   
   <entry>
     <title>成长——就是不断地挣扎</title>
-    <link href="http://dreamfy.cn/2018/03/14/%E6%88%90%E9%95%BF%E2%80%94%E2%80%94%E5%B0%B1%E6%98%AF%E4%B8%8D%E6%96%AD%E5%9C%B0%E6%8C%A3%E6%89%8E/"/>
-    <id>http://dreamfy.cn/2018/03/14/成长——就是不断地挣扎/</id>
+    <link href="http://fuyong.net.cn/2018/03/14/%E6%88%90%E9%95%BF%E2%80%94%E2%80%94%E5%B0%B1%E6%98%AF%E4%B8%8D%E6%96%AD%E5%9C%B0%E6%8C%A3%E6%89%8E/"/>
+    <id>http://fuyong.net.cn/2018/03/14/成长——就是不断地挣扎/</id>
     <published>2018-03-14T14:42:14.242Z</published>
     <updated>2018-03-18T02:22:29.976Z</updated>
     
@@ -166,17 +166,17 @@
     
     </summary>
     
-      <category term="感悟" scheme="http://dreamfy.cn/categories/%E6%84%9F%E6%82%9F/"/>
+      <category term="感悟" scheme="http://fuyong.net.cn/categories/%E6%84%9F%E6%82%9F/"/>
     
     
-      <category term="感悟" scheme="http://dreamfy.cn/tags/%E6%84%9F%E6%82%9F/"/>
+      <category term="感悟" scheme="http://fuyong.net.cn/tags/%E6%84%9F%E6%82%9F/"/>
     
   </entry>
   
   <entry>
     <title>使用Jasypt对数据库配置文件进行加密</title>
-    <link href="http://dreamfy.cn/2018/03/14/%E4%BD%BF%E7%94%A8Jasypt%E5%AF%B9%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8A%A0%E5%AF%86/"/>
-    <id>http://dreamfy.cn/2018/03/14/使用Jasypt对数据库配置文件进行加密/</id>
+    <link href="http://fuyong.net.cn/2018/03/14/%E4%BD%BF%E7%94%A8Jasypt%E5%AF%B9%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8A%A0%E5%AF%86/"/>
+    <id>http://fuyong.net.cn/2018/03/14/使用Jasypt对数据库配置文件进行加密/</id>
     <published>2018-03-14T14:42:14.242Z</published>
     <updated>2018-03-18T02:22:23.270Z</updated>
     
@@ -188,17 +188,17 @@
     
     </summary>
     
-      <category term="工作记录" scheme="http://dreamfy.cn/categories/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+      <category term="工作记录" scheme="http://fuyong.net.cn/categories/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
     
     
-      <category term="Jasypt" scheme="http://dreamfy.cn/tags/Jasypt/"/>
+      <category term="Jasypt" scheme="http://fuyong.net.cn/tags/Jasypt/"/>
     
   </entry>
   
   <entry>
     <title>Upsource 一个新的代码审查工具</title>
-    <link href="http://dreamfy.cn/2018/03/14/upsource-guide/"/>
-    <id>http://dreamfy.cn/2018/03/14/upsource-guide/</id>
+    <link href="http://fuyong.net.cn/2018/03/14/upsource-guide/"/>
+    <id>http://fuyong.net.cn/2018/03/14/upsource-guide/</id>
     <published>2018-03-14T14:42:14.241Z</published>
     <updated>2018-03-18T02:21:48.955Z</updated>
     
@@ -210,17 +210,17 @@
     
     </summary>
     
-      <category term="工具" scheme="http://dreamfy.cn/categories/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="http://fuyong.net.cn/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="Intellij IDEA" scheme="http://dreamfy.cn/tags/Intellij-IDEA/"/>
+      <category term="Intellij IDEA" scheme="http://fuyong.net.cn/tags/Intellij-IDEA/"/>
     
   </entry>
   
   <entry>
     <title>mysql中my-small.ini、my-medium.ini、my-large.ini、my-huge.ini的作用</title>
-    <link href="http://dreamfy.cn/2018/03/14/mysql%E4%B8%ADmy-small.ini%E3%80%81my-medium.ini%E3%80%81my-large.ini%E3%80%81my-huge.ini%E7%9A%84%E4%BD%9C%E7%94%A8/"/>
-    <id>http://dreamfy.cn/2018/03/14/mysql中my-small.ini、my-medium.ini、my-large.ini、my-huge.ini的作用/</id>
+    <link href="http://fuyong.net.cn/2018/03/14/mysql%E4%B8%ADmy-small.ini%E3%80%81my-medium.ini%E3%80%81my-large.ini%E3%80%81my-huge.ini%E7%9A%84%E4%BD%9C%E7%94%A8/"/>
+    <id>http://fuyong.net.cn/2018/03/14/mysql中my-small.ini、my-medium.ini、my-large.ini、my-huge.ini的作用/</id>
     <published>2018-03-14T14:42:14.241Z</published>
     <updated>2018-03-14T14:42:14.241Z</updated>
     
@@ -232,17 +232,17 @@
     
     </summary>
     
-      <category term="工作记录" scheme="http://dreamfy.cn/categories/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+      <category term="工作记录" scheme="http://fuyong.net.cn/categories/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
     
     
-      <category term="MySQL" scheme="http://dreamfy.cn/tags/MySQL/"/>
+      <category term="MySQL" scheme="http://fuyong.net.cn/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>Upsource 与Intellij IDEA集成</title>
-    <link href="http://dreamfy.cn/2018/03/14/upsource-Intellij-IDEA-Integrate/"/>
-    <id>http://dreamfy.cn/2018/03/14/upsource-Intellij-IDEA-Integrate/</id>
+    <link href="http://fuyong.net.cn/2018/03/14/upsource-Intellij-IDEA-Integrate/"/>
+    <id>http://fuyong.net.cn/2018/03/14/upsource-Intellij-IDEA-Integrate/</id>
     <published>2018-03-14T14:42:14.241Z</published>
     <updated>2018-03-18T02:21:56.597Z</updated>
     
@@ -254,17 +254,17 @@
     
     </summary>
     
-      <category term="工具" scheme="http://dreamfy.cn/categories/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="http://fuyong.net.cn/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="Intellij IDEA Upsource" scheme="http://dreamfy.cn/tags/Intellij-IDEA-Upsource/"/>
+      <category term="Intellij IDEA Upsource" scheme="http://fuyong.net.cn/tags/Intellij-IDEA-Upsource/"/>
     
   </entry>
   
   <entry>
     <title>一张图教你如何学习新技术</title>
-    <link href="http://dreamfy.cn/2018/03/14/%E4%B8%80%E5%BC%A0%E5%9B%BE%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E6%96%B0%E6%8A%80%E6%9C%AF/"/>
-    <id>http://dreamfy.cn/2018/03/14/一张图教你如何学习新技术/</id>
+    <link href="http://fuyong.net.cn/2018/03/14/%E4%B8%80%E5%BC%A0%E5%9B%BE%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E6%96%B0%E6%8A%80%E6%9C%AF/"/>
+    <id>http://fuyong.net.cn/2018/03/14/一张图教你如何学习新技术/</id>
     <published>2018-03-14T14:42:14.241Z</published>
     <updated>2018-03-18T02:22:04.440Z</updated>
     
@@ -276,17 +276,17 @@
     
     </summary>
     
-      <category term="学习记录" scheme="http://dreamfy.cn/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+      <category term="学习记录" scheme="http://fuyong.net.cn/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     
-      <category term="学习方法" scheme="http://dreamfy.cn/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
+      <category term="学习方法" scheme="http://fuyong.net.cn/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>Java解惑</title>
-    <link href="http://dreamfy.cn/2018/03/14/java-disabuse/"/>
-    <id>http://dreamfy.cn/2018/03/14/java-disabuse/</id>
+    <link href="http://fuyong.net.cn/2018/03/14/java-disabuse/"/>
+    <id>http://fuyong.net.cn/2018/03/14/java-disabuse/</id>
     <published>2018-03-14T14:42:14.240Z</published>
     <updated>2018-03-18T02:21:16.587Z</updated>
     
@@ -298,17 +298,17 @@
     
     </summary>
     
-      <category term="Java" scheme="http://dreamfy.cn/categories/Java/"/>
+      <category term="Java" scheme="http://fuyong.net.cn/categories/Java/"/>
     
     
-      <category term="Java" scheme="http://dreamfy.cn/tags/Java/"/>
+      <category term="Java" scheme="http://fuyong.net.cn/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>vim学习笔记</title>
-    <link href="http://dreamfy.cn/2018/03/14/linux-vim/"/>
-    <id>http://dreamfy.cn/2018/03/14/linux-vim/</id>
+    <link href="http://fuyong.net.cn/2018/03/14/linux-vim/"/>
+    <id>http://fuyong.net.cn/2018/03/14/linux-vim/</id>
     <published>2018-03-14T14:42:14.240Z</published>
     <updated>2018-03-20T14:18:39.190Z</updated>
     
@@ -320,17 +320,17 @@
     
     </summary>
     
-      <category term="学习记录" scheme="http://dreamfy.cn/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+      <category term="学习记录" scheme="http://fuyong.net.cn/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     
-      <category term="Linux vim" scheme="http://dreamfy.cn/tags/Linux-vim/"/>
+      <category term="Linux vim" scheme="http://fuyong.net.cn/tags/Linux-vim/"/>
     
   </entry>
   
   <entry>
     <title>Java异常处理及应用</title>
-    <link href="http://dreamfy.cn/2018/03/14/java-exception-apply/"/>
-    <id>http://dreamfy.cn/2018/03/14/java-exception-apply/</id>
+    <link href="http://fuyong.net.cn/2018/03/14/java-exception-apply/"/>
+    <id>http://fuyong.net.cn/2018/03/14/java-exception-apply/</id>
     <published>2018-03-14T14:42:14.240Z</published>
     <updated>2018-03-18T02:21:05.535Z</updated>
     
@@ -342,17 +342,17 @@
     
     </summary>
     
-      <category term="Java" scheme="http://dreamfy.cn/categories/Java/"/>
+      <category term="Java" scheme="http://fuyong.net.cn/categories/Java/"/>
     
     
-      <category term="Java" scheme="http://dreamfy.cn/tags/Java/"/>
+      <category term="Java" scheme="http://fuyong.net.cn/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>Intellij IDEA快捷键介绍</title>
-    <link href="http://dreamfy.cn/2018/03/14/Intellij%20IDEA%E5%BF%AB%E6%8D%B7%E9%94%AE%E4%BB%8B%E7%BB%8D/"/>
-    <id>http://dreamfy.cn/2018/03/14/Intellij IDEA快捷键介绍/</id>
+    <link href="http://fuyong.net.cn/2018/03/14/Intellij%20IDEA%E5%BF%AB%E6%8D%B7%E9%94%AE%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://fuyong.net.cn/2018/03/14/Intellij IDEA快捷键介绍/</id>
     <published>2018-03-14T14:42:14.239Z</published>
     <updated>2018-03-18T02:21:35.302Z</updated>
     
@@ -364,17 +364,17 @@
     
     </summary>
     
-      <category term="工具" scheme="http://dreamfy.cn/categories/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="http://fuyong.net.cn/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="Intellij IDEA" scheme="http://dreamfy.cn/tags/Intellij-IDEA/"/>
+      <category term="Intellij IDEA" scheme="http://fuyong.net.cn/tags/Intellij-IDEA/"/>
     
   </entry>
   
   <entry>
     <title>Java基础知识归档</title>
-    <link href="http://dreamfy.cn/2018/03/14/java-base/"/>
-    <id>http://dreamfy.cn/2018/03/14/java-base/</id>
+    <link href="http://fuyong.net.cn/2018/03/14/java-base/"/>
+    <id>http://fuyong.net.cn/2018/03/14/java-base/</id>
     <published>2018-03-14T14:42:14.239Z</published>
     <updated>2018-03-18T02:21:39.163Z</updated>
     
@@ -386,10 +386,10 @@
     
     </summary>
     
-      <category term="Java" scheme="http://dreamfy.cn/categories/Java/"/>
+      <category term="Java" scheme="http://fuyong.net.cn/categories/Java/"/>
     
     
-      <category term="Java" scheme="http://dreamfy.cn/tags/Java/"/>
+      <category term="Java" scheme="http://fuyong.net.cn/tags/Java/"/>
     
   </entry>
   
