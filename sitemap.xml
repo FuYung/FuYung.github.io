@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://fuyong.net.cn/2020/03/29/%E4%BB%A3%E7%A0%81%E5%AE%A1%E6%9F%A5%E6%B5%81%E7%A8%8B/</loc>
+    
+    <lastmod>2020-03-29T12:59:55.371Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://fuyong.net.cn/2020/03/01/Python%E5%8C%85%E7%AE%A1%E7%90%86/</loc>
     
     <lastmod>2020-03-15T12:25:42.453Z</lastmod>
@@ -135,14 +142,14 @@
   </url>
   
   <url>
-    <loc>http://fuyong.net.cn/about/index.html</loc>
+    <loc>http://fuyong.net.cn/categories/index.html</loc>
     
     <lastmod>2018-03-14T14:42:14.243Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://fuyong.net.cn/categories/index.html</loc>
+    <loc>http://fuyong.net.cn/about/index.html</loc>
     
     <lastmod>2018-03-14T14:42:14.243Z</lastmod>
     
